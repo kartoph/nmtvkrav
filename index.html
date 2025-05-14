@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Titles Table</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Таблиця з МАН робіт</h1>
+
+    <!-- Панель управління -->
+    <div class="controls">
+        <label for="rows-per-page">Кількість пунктів на сторінку:</label>
+        <select id="rows-per-page">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="500">500</option>
+            <option value="2000">Всі</option>
+        </select>
+
+        <label for="search-title">Пошук за назвою:</label>
+        <input type="text" id="search-title" placeholder="Введіть назву">
+    </div>
+
+    <table id="titles-table">
+        <thead>
+            <tr>
+                <th data-sort="number">#</th>
+                <th data-sort="title">Назва</th>
+                <th data-sort="category">Категорія</th>
+                <th data-sort="organization">Організація</th>
+                <th>Дод. інформація</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Дані будуть додані динамічно -->
+        </tbody>
+    </table>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
